@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main ()
 {
@@ -8,5 +8,6 @@ printf("is positive");
 else if (n==0)
 printf("is zero");
 else (n>0)
-printf("is negative")
+printf("is negative");
 return 0;
+}
