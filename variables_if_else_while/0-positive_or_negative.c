@@ -1,4 +1,4 @@
-#iclude<studio.h>
+#include<studio.h>
 
 int main ()
 {
