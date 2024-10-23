@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+
+/**
+ * main - entry point
+ * Return: return 0 if success
+more headers goes there */
 
 /* betty style doc for function main goes there */
 int main(void)
