@@ -10,14 +10,15 @@ int main(void)
 
 	i = '0';
 
-	j = 'f';
+	j = 'a';
+
 	while (i <= '9')
-	{	putchar (i);
+	{	putchar(i);
 		i++;
-	}
-	while (j <= 'a')
-	{	putchar (i);
-		i++;
+        }
+	while (j <= 'f')
+	{	putchar(j);
+		j++;
 	}
 	putchar ('\n');
 	return (0);
