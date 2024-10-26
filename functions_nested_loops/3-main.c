@@ -2,7 +2,7 @@
 
 /**
  * main - check the code.
- *
+ * test_islower
  * Return: Always 0.
  */
 int _islower(int c);
