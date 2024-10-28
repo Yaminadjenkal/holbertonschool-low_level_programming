@@ -10,6 +10,6 @@ int mul(int a, int b)
 	b = 9;
 	while (a * b)
 	a++;
-	printf a;
+	_putchar a;
 	return (0);
 }
