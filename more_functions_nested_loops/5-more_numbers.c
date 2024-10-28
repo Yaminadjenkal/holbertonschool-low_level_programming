@@ -5,16 +5,21 @@
  */
 void more_numbers(void)
 {
-	int i, a;
-	i = 0;
-	a = 0;
-	while (a < 10)
+
+	int i;
+	char p;
+
+	i = 'a';
+	p = 0;
+	while (p < 10)
 	{
 		while (i <= 14)
+		{
 			_putchar(i);
 			i++;
+		}
+		i = 'a';
+		p++;
+		_putchar('\n');
 	}
-	i = '0';
-	a++;
-	_putchar ('\n');
 }
