@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*int mul - multiplies two integers
+*int mul - function that multipliestwo numbers
 *@a: character to be verified
 *@b: character to be verified
 *Return: return a and b
