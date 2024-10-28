@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_most_numbers - print all nembers except 
+ * print_most_numbers - prints all the digits from 0 to 9, except for 2 and 4 
  *
  * 
  */
@@ -12,8 +12,8 @@ void print_most_numbers(void)
 	while (i <= '9')
 {
 	if (i != '2' && i != '4')
-		_putchar (i);
+		_putchar(i);
 	i++;
 }
 }
-_putchar ('\n');
+_putchar('\n');
