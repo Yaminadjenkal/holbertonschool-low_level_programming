@@ -5,24 +5,20 @@
  * description :use only _putchar to print
  */
 void print_square(int size)
+{
 	int c, i;
-	c = 0;
 
-	if (n <= 0) 
-{
-		_putchar('\n');
-	}
-else
-{
-		while (c < size) 
+	c = 10;
+	while (c <= 10)
+	{
+		i = 0;
+		while (i < 10)
 		{
-			for (i = 0; i < c; i++)
-			{
-				
-				_putchar('#');
-			}
-			_putchar('\n');
-			c++;
+			_putchar(i);
+		}
+		i--;
+		{
+		_putchar('\n');
 		}
 	}
 }
