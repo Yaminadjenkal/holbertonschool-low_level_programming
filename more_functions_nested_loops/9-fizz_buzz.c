@@ -1,9 +1,12 @@
 #include <stdio.h>
 /**
- * main - entry point
- * Return: return 0 if success
- * printf to print words
- */
+*main - program that prints either number
+*or fizz or buzz or fizzBuzz
+*
+*
+*Return: returns 0
+*/
+
 int main(void)
 {
 	int i;
