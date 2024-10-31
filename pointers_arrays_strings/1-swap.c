@@ -8,5 +8,7 @@
 void swap_int(int *a, int *b)
 {
 	a = b;
-swap_int(&a, &b);
+	swap_int(&a, &b);
+	_putchar(a = b);
+
 }
