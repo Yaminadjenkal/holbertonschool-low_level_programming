@@ -7,10 +7,10 @@
 
 void swap_int(int *a, int *b)
 {
-	int x = 10;
-	int y = 20;
-
+	int i = a;
 	a = b;
+	b = i;
+
 	swap_int(&a, &b);
 	_putchar(a = b);
 
