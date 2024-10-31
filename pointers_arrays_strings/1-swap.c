@@ -7,11 +7,8 @@
 
 void swap_int(int *a, int *b)
 {
-	int i = a;
-	a = b;
-	b = i;
-
-	swap_int(&a, &b);
-	_putchar(a = b);
+	int swp = *a;
+	*a = *b;
+	*b = swp;
 
 }
