@@ -1,10 +1,14 @@
 #include "main.h"
-/*
- * _puts - prints a string
- * return nothing
- * use only the command _puts
+
+/**
+ * _puts - imprime une chaîne de caractères suivie d'une nouvelle ligne
+ * @str: pointeur vers la chaîne de caractères à imprimer
  */
-void _puts(char *str);
-	char *str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-	_puts(str);
+void _puts(char *str)
+{
+	while (*str)
+	{
+		_putchar(*str++);
+}
 	_putchar('\n');
+	}
