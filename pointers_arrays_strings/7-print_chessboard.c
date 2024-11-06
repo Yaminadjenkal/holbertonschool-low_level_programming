@@ -6,7 +6,6 @@
  */
 void print_chessboard(char (*a)[8])
 {
-	char i, j;
 
 	for (int i = 0; i < 8; i++)
 	{
