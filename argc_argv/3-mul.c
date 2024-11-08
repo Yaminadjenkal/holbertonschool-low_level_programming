@@ -1,27 +1,39 @@
+/*
+ * File: 4-add.c
+ * Auth: Macbook
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * main - Entry point of the program
- * @argc: The number of arguments passed to the program
- * @argv: An array of strings representing the arguments
+ * main - Prints the addition of positive numbers,
+ *        followed by a new line.
+ * @argc: The number of arguments passed to the program.
+ * @argv: An array of pointers to the arguments.
  *
- * Return: 0 on success, 1 on error
+ * Return: If one of the numbers contains symbols that are non-digits - 1.
+ *         Otherwise - 0.
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int num1, num2, result;
+	int num, digit, sum = 0;
 
-	if (argc != 3)
+	for (num = 1; num < argc; num++)
 	{
-		printf("Error\n");
-		return (1);
+		for (digit = 0; argv[num][digit]; digit++)
+		{
+			if (argv[num][digit] < '0' || argv[num][digit] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+
+		sum += atoi(argv[num]);
 	}
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-	result = num1 * num2;
+	printf("%d\n", sum);
 
-	printf("%d\n", result);
 	return (0);
 }
