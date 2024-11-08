@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-/**
- * * main - programme qui affiche son propre nom 
- * @argc: Nombre d'arguments passÃ©s au programme (non utilisÃ)
- * @argv: Tableau de chaÃ®nes contenant les argum
- * * Return: 0 si le programme se termine avec succÃ¨s.
- */
-nt main(int argc, char **argv)
-{
-	(void)argc;
 
-	printf("%s\n", argv[3]);
-	exit(EXIT_SUCCESS);
+/**
+ * main - Entry point of the program
+ * @argc: The number of arguments passed to the program
+ * @argv: An array of strings representing the arguments
+ *
+ * Return: 0 on success
+ */
+int main(int argc, char **argv)
+{
+	(void)argv;
+	printf("%d\n", argc - 1);
+	return (0);
 }
