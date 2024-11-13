@@ -1,30 +1,32 @@
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * _strdup - Retourne un pointeur vers un nouvel espace alloué en mémoire, qui contient une copie de la chaîne donnée en paramètre.
- * @str: La chaîne à dupliquer.
+ * _strdup - duplicates a string into newly allocated array
  *
- * Return: Un pointeur vers la nouvelle chaîne dupliquée, ou NULL si str est NULL ou si l'allocation échoue.
+ * @str: string to duplicate
+ *
+ * Return: pointer to new string
  */
 char *_strdup(char *str)
 {
-	char *dup_str;
-	int len, i;
+	int size = 0;
+	char *ptr, *ret;
 
-	if (str == NULL)
+	if (!str)
 		return (NULL);
 
-	len = strlen(str);
-	dup_str = malloc(sizeof(char) * (len + 1));
+	ptr = str;
+	while (*ptr++)
+		size++;
 
-	if (dup_str == NULL)
+	ret = malloc(size + 1);
+	if (!ret)
 		return (NULL);
 
-	for (i = 0; i < len; i++)
-		dup_str[i] = str[i];
+	ptr = ret;
+	while (*str)
+		*ptr++ = *str++;
 
-	dup_str[len] = '\0';
-
-	return (dup_str);
+	*ptr = 0;
+	return (ret);
 }
