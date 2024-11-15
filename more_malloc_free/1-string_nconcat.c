@@ -1,40 +1,44 @@
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * string_nconcat - Concatène deux chaînes de caractè
- * @s1: Première haîe
- * @s2: Deuxième chaî
- * @n: Nombre de caractères de s2 à concaté
- * Return: Pointeur vers la nouvelle chaîne concaténée, ou NULL en cas d'é
+ * string_nconcat - Concatenate two strings using n amount of s2
+ * @s1: First string
+ * @s2: String to add to end of s1
+ * @n: Amount of s2 to add to s1
+ *
+ * Return: pointer to new area in memory, NULL if it fails
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *new_str;
-	unsigned int len1, len2, i, j;
+	char *nstr, *empt;
+	unsigned int i, len, j;
+	unsigned int size;
 
+	len = 0;
+	empt = "";
 	if (s1 == NULL)
-		s1 = "";
+		s1 = empt;
 	if (s2 == NULL)
-		s2 = "";
-
-	len1 = strlen(s1);
-	len2 = strlen(s2);
-
-	if (n >= len2)
-		n = len2;
-
-	new_str = malloc(len1 + n + 1);
-	if (new_str == NULL)
+		s2 = empt;
+	while (s1[len] != '\0')
+		len++;
+	size = (len + n) * sizeof(*nstr);
+	nstr = malloc(size + 1);
+	if (nstr == NULL)
 		return (NULL);
-
-	for (i = 0; i < len1; i++)
-		new_str[i] = s1[i];
-
-	for (j = 0; j < n; j++, i++)
-		new_str[i] = s2[j];
-
-	new_str[i] = '\0';
-
-	return (new_str);
+	i = 0;
+	while (i < size && s1[i] != '\0')
+	{
+		nstr[i] = s1[i];
+		i++;
+	}
+	j = 0;
+	while (i < size && s2[j] != '\0')
+	{
+		nstr[i] = s2[j];
+		i++;
+		j++;
+	}
+	nstr[i] = '\0';
+	return (nstr);
 }
