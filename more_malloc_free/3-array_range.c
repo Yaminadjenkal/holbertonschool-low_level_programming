@@ -1,16 +1,15 @@
 #include <stdlib.h>
 
 /**
- * array_range - fonction that creat an array
- *@tab variable that take a size of the array
- *@i variable of type int replace min
- *@j variable of type int replace max
- * return NULL if malloc fails
+ * array_range - fonction pour crÃer un tableau
+ *@min valeur minimal incluse dans le tableau
+ *@max valeur maximal incluse dans le tableau
+ *Return : pointeur nouvellement crÃe ou NULL si echec
  */
 int *array_range(int min, int max)
 {
 	int *tab;
-	int size , i;
+	int size ,i;
 
 	if (min > max)
 	return (NULL);
