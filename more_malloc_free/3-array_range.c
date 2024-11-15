@@ -2,14 +2,16 @@
 
 /**
  * array_range - fonction pour crÃer un tableau
- *@min valeur minimal incluse dans le tableau
- *@max valeur maximal incluse dans le tableau
- *Return : pointeur nouvellement crÃe ou NULL si echec
+ * @min : valeur minimal incluse dans le tableau
+ * @max : valeur maximal incluse dans le tableau
+ *
+ *Return : pointeur vers le tableau nouvellemenit crÃ©e ou NUL en cas d'echec
  */
+
 int *array_range(int min, int max)
 {
 	int *tab;
-	int size ,i;
+	int size, i;
 
 	if (min > max)
 	return (NULL);
