@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-#include <stddef.h>
+
 /**
  *array_iterator-execute une fonction sur les √l√ment du tableau
  *@array: tableau d'integers
