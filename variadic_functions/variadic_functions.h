@@ -1,3 +1,6 @@
-#ifndef VARIADIC_FUNCTIONS.H
-#define VARIADIC_FUNCTIONS.H
-#endif
+#ifndef VARIADIC_FUNCTIONS_H
+#define VARIADIC_FUNCTIONS_H
+#include <stdarg.h>
+int sum_them_all(const unsigned int n, ...);
+
+#endif /* VARIADIC_FUNCTIONS_H */
