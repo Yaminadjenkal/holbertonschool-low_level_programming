@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * print_dlistint - Affiche tous les éléments d'une liste doublement chaînée.
+ * print_dlistint - Affiche tous les élément
+ * d'une liste doublement chaînée.
  * @h: Pointeur vers la tête de la liste.
  * Return: Le nombre de nœuds dans la liste.
  */
