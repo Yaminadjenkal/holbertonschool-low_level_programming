@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- *
- *
- *
- *
+ *add_dnodeint_end - add a new node at list of dlistint_t
+ *@head : double pointer to the head of the list
+ *@n : integer to insert in the new node
+ * Return : the new node or NULL if it fails
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
@@ -13,6 +13,8 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	new_node = malloc (sizeof (dlistint_t);
 			if (new_node == NULL)
 			return (NULL);
+			new_node->n = n; 
+			new_node->next = NULL;
 
 			if (*head == NULL)
 			{
